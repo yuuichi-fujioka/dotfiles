@@ -24,6 +24,15 @@ if dein#load_state('~/.cache/dein')
   " ansible-vim
   call dein#add('pearofducks/ansible-vim')
 
+  " vim-fugitive
+  call dein#add('tpope/vim-fugitive')
+
+  " vim-airline
+  call dein#add('airblade/vim-gitgutter')
+  call dein#add('mhinz/vim-signify')
+  call dein#add('vim-airline/vim-airline')
+  call dein#add('vim-airline/vim-airline-themes')
+
   " Required:
   call dein#end()
   call dein#save_state()
@@ -70,6 +79,7 @@ nnoremap <Space> <Nop>
 nmap <leader>w :w<CR>
 nmap <leader>q :q<CR>
 
+nmap <leader>s :SignifyToggle<CR>
 
 "Go ------------------
 
