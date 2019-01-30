@@ -79,6 +79,9 @@ nnoremap <Space> <Nop>
 nmap <leader>w :w<CR>
 nmap <leader>q :q<CR>
 
+" Toggle Line Number
+nmap <leader>n :set nu!<CR>
+
 nmap <leader>s :SignifyToggle<CR>
 
 "Go ------------------
