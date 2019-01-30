@@ -82,6 +82,7 @@ nmap <leader>q :q<CR>
 " Toggle Line Number
 nmap <leader>n :set nu!<CR>
 
+" Toggle Git Status on Status Line and Left
 nmap <leader>s :SignifyToggle<CR>
 
 "Go ------------------
