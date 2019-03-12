@@ -76,14 +76,17 @@ set background=dark
 let mapleader = "\<Space>"
 nnoremap <Space> <Nop>
 
-nmap <leader>w :w<CR>
-nmap <leader>q :q<CR>
+nmap <leader>w :<c-u>w<CR>
+nmap <leader>q :<c-u>q<CR>
 
 " Toggle Line Number
-nmap <leader>n :set nu!<CR>
+nmap <leader>n :<c-u>set nu!<CR>
 
 " Toggle Git Status on Status Line and Left
-nmap <leader>s :SignifyToggle<CR>
+nmap <leader>s :<c-u>SignifyToggle<CR>
+
+" make with current makefile
+nmap <leader>mc :<c-u>make -C %:h -f %:t<CR>
 
 "Go ------------------
 
@@ -91,4 +94,5 @@ autocmd FileType go nmap <leader>t <Plug>(go-test)
 autocmd FileType go nmap <leader>c <Plug>(go-coverage)
 autocmd FileType go nmap <leader>b <Plug>(go-build)
 autocmd FileType go nmap <leader>r <Plug>(go-run)
+autocmd FileType go nmap <leader>d <Plug>(go-doc)
 
